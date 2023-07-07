@@ -13,29 +13,25 @@ const Portfolio = () => {
       id: 1,
       src: arrayDestruct,
       link: "https://github.com/Chethana-22/the_hive_heart",
+      description: "Art Gallery",
     },
     {
       id: 2,
       src: reactParallax,
       link: "https://github.com/Chethana-22/Movie-recommender-system",
+      description: "Movie Recommendation System",
     },
     {
       id: 3,
       src: navbar,
       link: "https://github.com/Chethana-22/Netflix-clone",
+      description: "Netflix-Clone",
     },
     {
       id: 4,
       src: reactSmooth,
-      link: "",
-    },
-    {
-      id: 5,
-      src: installNode,
-    },
-    {
-      id: 6,
-      src: reactWeather,
+      link: "https://github.com/Chethana-22/portfolio",
+      description: "Portfolio"
     },
   ];
 
@@ -53,7 +49,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src, link }) => (
+          {portfolios.map(({ id, src, link, description }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -61,7 +57,9 @@ const Portfolio = () => {
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-                
+              <button className="w-1/2 px-6 py-3 m-4 ">
+                  {description}
+                </button>
                <Router>
                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105" >
                 <Link to={link}>Code</Link>

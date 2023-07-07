@@ -4,10 +4,11 @@ import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
-import nextjs from "../assets/nextjs.png";
-import graphql from "../assets/graphql.png";
+import docker from "../assets/docker.png";
+import python from "../assets/python.jpg";
 import github from "../assets/github.png";
-import tailwind from "../assets/tailwind.png";
+import java from "../assets/java.jpg";
+import mysql from '../assets/mysql.png';
 
 const Experience = () => {
   const techs = [
@@ -37,20 +38,20 @@ const Experience = () => {
     },
     {
       id: 5,
-      src: tailwind,
-      title: "Tailwind",
+      src: java,
+      title: "Java",
       style: "shadow-sky-400",
     },
     {
       id: 6,
-      src: nextjs,
-      title: "Next JS",
+      src: docker,
+      title: "Docker",
       style: "shadow-white",
     },
     {
       id: 7,
-      src: graphql,
-      title: "GraphQL",
+      src: python,
+      title: "Python",
       style: "shadow-pink-400",
     },
     {
@@ -58,6 +59,12 @@ const Experience = () => {
       src: github,
       title: "GitHub",
       style: "shadow-gray-400",
+    },
+    {
+        id: 9,
+        src: mysql,
+        title: "MySql",
+        style: "shadow-gray-400",
     },
   ];
 
